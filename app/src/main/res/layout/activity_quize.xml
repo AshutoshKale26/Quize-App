@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".QuizeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/questionIndicatorTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_centerVertical="true"
+            android:hint="Question No 3 / 20"/>
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginEnd="5dp"
+            android:src="@drawable/access_time_24"
+            app:tint="@color/PURPLE"
+            android:layout_toStartOf="@+id/quition_Timing_textView"/>
+
+        <TextView
+            android:id="@+id/quition_Timing_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:hint="20 Min"
+            android:textColor="@color/BLUE"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/ProgressIndicator"
+        android:layout_width="match_parent"
+        android:background="@color/PURPLE"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="8dp"
+        android:progress="70"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:id="@+id/questionTextView"
+                android:text="What Is Computer Scince"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:backgroundTint="@color/BLUE"
+                android:background="@drawable/rounder_corner"
+                />
+
+            <Button
+                android:id="@+id/btn0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="4dp"
+                android:backgroundTint="@color/GREY"
+                android:text="Ans A"
+                android:textColor="@color/black"
+                android:paddingVertical="12dp"
+                android:gravity="center_vertical"
+                />
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="4dp"
+                android:backgroundTint="@color/GREY"
+                android:text="Ans B"
+                android:textColor="@color/black"
+                android:paddingVertical="12dp"
+                android:gravity="center_vertical"
+                />
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="4dp"
+                android:backgroundTint="@color/GREY"
+                android:text="Ans C"
+                android:textColor="@color/black"
+                android:paddingVertical="12dp"
+                android:gravity="center_vertical"
+                />
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="4dp"
+                android:backgroundTint="@color/GREY"
+                android:text="Ans D"
+                android:textColor="@color/black"
+                android:paddingVertical="12dp"
+                android:gravity="center_vertical"
+                />
+
+            <Button
+                android:id="@+id/Next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="4dp"
+                android:backgroundTint="@color/blue"
+                android:gravity="center_vertical"
+                android:paddingVertical="12dp"
+                android:text="NEXT"
+                android:textColor="@color/white"
+                android:layout_gravity="end"/>
+        </LinearLayout>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

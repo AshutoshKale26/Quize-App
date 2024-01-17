@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+
+    tools:context=".ScoreDialoge">
+
+    <TextView
+        android:id="@+id/scoreTittle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Congrats !!!"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <com.google.android.material.progressindicator.CircularProgressIndicator
+            android:id="@+id/CircularProgressIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            app:trackColor="@color/GREY"
+            app:trackCornerRadius="20dp"
+            android:progress="60"
+            app:indicatorSize="90dp"
+            app:trackThickness="8dp"/>
+        <TextView
+            android:id="@+id/scoreIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="60%"
+            android:layout_centerInParent="true"
+            android:textStyle="bold"
+            android:layout_marginVertical="4dp"/>
+
+
+    </RelativeLayout>
+
+    <TextView
+
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scoreSubTittle"
+        android:gravity="center"
+        android:textSize="15sp" />
+    <Button
+        android:id="@+id/finishBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Finish "
+        />
+
+
+</LinearLayout>
